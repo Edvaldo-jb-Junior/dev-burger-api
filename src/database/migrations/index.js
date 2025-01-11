@@ -1,7 +1,7 @@
-'use strict';
+/*'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
-module.exports = {
+/**module.exports = {
   async up (queryInterface, Sequelize) {
      
      await queryInterface.createTable('users', { 
@@ -43,16 +43,16 @@ module.exports = {
     await queryInterface.dropTable('users');
      
   }
-};
+};*/
 
 
 import Sequelize from "sequelize";
 
-import configDatabase from "../config/database.js";
+import configDatabase from "../../config/database.js";
 
-import Users from "../app/models/Users";
+import User from "../../app/models/User";
 
-const Models = [Users];
+const models = [User];
 
 class Database {
     constructor(){
