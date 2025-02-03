@@ -17,7 +17,7 @@ class ProductController {
             return response.status(400).json({ erro: err.errors });
         }
 
-        const { filename: path } = request.file;
+        const {filename: path} = request.file;
         const { name, price, category } = request.body;
 
         const product = await Product.create({
@@ -27,7 +27,7 @@ class ProductController {
             path,
         });
 
-        return response.status(201).json({ mensage: "ok" })
+        return response.status(201).json(product);
     }
 
     async index( request, response){

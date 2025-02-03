@@ -1,9 +1,10 @@
 
-import multer from "multer"
+import multer from "multer";
 
-import { extname, resolve } from "node:path"
+import { extname, resolve } from "node:path";
 
-import { v4 } from "uuid"
+import { v4 } from "uuid";
+
 
 export default {
     storage: multer.diskStorage({

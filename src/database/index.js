@@ -54,7 +54,7 @@ import User from "../app/models/User";
 
 import Product from "../app/models/Product";
 
-const models = [User, Product];
+const models = [ User, Product ];
 
 class Database {
     constructor() {
